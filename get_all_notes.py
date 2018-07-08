@@ -1,7 +1,7 @@
 """
 This module is used to extract all of the notes from all of the different 
 video game soundtracks. By using all the notes from all of the different 
-video game soundtracks, the neural networks can be transferred between 
+video game soundtracks, the neural network weights can be transferred between 
 video games to create all new sounds.
 """
 
@@ -209,6 +209,7 @@ def get_all_notes():
     pickle.dump(all_notes, open("pokemon_red_blue_yellow/data/all_notes", "wb"))
     pickle.dump(all_notes, open("zelda_ocarina_of_time/data/all_notes", "wb"))
     pickle.dump(all_notes, open("final_fantasy_7/data/all_notes", "wb"))
+    pickle.dump(all_notes, open("three_games_combined/data/all_notes", "wb"))
     
 
 if __name__ == '__main__':
